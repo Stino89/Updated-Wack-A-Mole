@@ -9,8 +9,9 @@ const MoleContainer = (props) => {
         props.setScore(props.score + 1)
         setTheMole(false)
     }
-
-    let displayMole = theMole ? <Mole setScore={props.setScore} toggle={setTheMole} handleClick={handleClick} /> : <EmptySlot toggle={setTheMole} />
+// ternary operator
+let displayMole = theMole ? <Mole setScore={props.setScore}toggle={setTheMole} handleClick={handleClick} />: <EmptySlot toggle={setTheMole} />
+    
 
     return (
         <div style={{'display': 'inline-block', 'width': '30vw'}}>
